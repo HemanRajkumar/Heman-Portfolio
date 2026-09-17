@@ -1,0 +1,103 @@
+PROFILE
+=======
+Name: Heman Rajkumar
+Role: BTech Computer Science and Engineering student at Lovely Professional University (LPU), Phagwara, Punjab
+Focus areas: Machine learning, mobile/web app development, and data analysis
+GitHub: github.com/HemanRajkumar
+LinkedIn: linkedin.com/in/hemanrajkumar
+Email: hemanrajkumar359660070@gmail.com
+Mobile: +91-9526448569
+
+EDUCATION
+=========
+Lovely Professional University, Phagwara, Punjab
+Bachelor of Technology - Computer Science and Engineering; CGPA: 7.87
+August 2024 - Present
+
+Army Public School Bengdubi, Siliguri, West Bengal
+Intermediate; Percentage: 71.6% | April 2022 - March 2024
+Matriculation; Percentage: 84.2% | April 2014 - March 2022
+
+SKILLS
+======
+Languages: C, C++, Python, Java, SQL
+Libraries/Frameworks: NumPy, Pandas, Scikit-learn, Matplotlib, HTML, CSS, JavaScript
+Tools/Platforms: Git, GitHub, Google Colab, VS Code, Linux, Cisco Packet Tracer
+Soft Skills: Problem-Solving, Team Player, Adaptability
+
+PROJECTS
+========
+
+1. Skill Gap Analyzer (Aug 2026)
+GitHub: https://github.com/HemanRajkumar/Skill_Gap_Analyzer.git
+An AI-powered application that analyzes a user's existing skills against their career goals and
+identifies relevant skill gaps, providing structured insights on what to improve.
+- Built a FastAPI backend with endpoints for handling user inputs, processing skill-analysis
+  requests, and returning structured results.
+- Integrated Google Gemini to generate AI-assisted skill-gap insights and personalized
+  recommendations based on the user's career objectives and current skill set.
+Tech: Python, FastAPI, Google Gemini, HTML, CSS
+
+2. Intelligent Crop Advisory System (Apr 2026)
+GitHub: https://github.com/HemanRajkumar/crop-advisory-system.git
+A machine-learning-based agricultural advisory system combining crop recommendation, fertilizer
+recommendation, plant-disease detection, and yield prediction into one unified application. Built
+as a group Applied Machine Learning course project at LPU (developed in Google Colab).
+- Crop recommendation: Random Forest model.
+- Fertilizer recommendation: Decision Tree model.
+- Plant-disease detection: TensorFlow/Keras, MobileNetV2.
+- Yield prediction: Random Forest model.
+- Interactive Streamlit frontend with Plotly-based visualizations, deployed via cloudflared
+  tunneling; included a login/user-history system, a structured GitHub repo, a full project
+  report, and viva prep material.
+Tech: Python, Scikit-learn, TensorFlow/Keras, Streamlit, Plotly
+
+3. Pokemon Pokedex (Oct 2024)
+GitHub: https://github.com/HemanRajkumar/Pokemon_Pokedex.git
+A responsive and interactive Pokedex website for exploring detailed Pokemon information (types,
+abilities, statistics, moves) with simple navigation and an engaging browsing experience.
+- JavaScript-powered interactive features layered on structured HTML content.
+- Deployed using GitHub Pages.
+Tech: HTML, CSS, JavaScript
+
+4. AI Thumbnail Generator
+A web app for generating thumbnails. Iterated through CORS issues encountered when calling the
+Anthropic API directly from a sandboxed iframe, and ultimately shipped a standalone free version
+powered by a rule-based JavaScript engine instead.
+- Gradient templates, draggable text layers, and PNG export.
+Tech: JavaScript, HTML, CSS
+
+5. GBA ROM Automation Bot
+A Python bot that automates mining and fishing mechanics in a Game Boy Advance game running on the
+VBA-M emulator.
+- Uses MSS for screen capture, OpenCV for detection, and pydirectinput to drive input.
+- Uses dynamic rock-depletion detection rather than fixed timers, so it adapts to actual game state.
+Tech: Python, OpenCV, MSS, pydirectinput
+
+6. Gemini CLI Chatbot
+A local, terminal-based chatbot built on the Gemini API.
+- Conversation history managed via the Gemini SDK's start_chat().
+- API key read from an environment variable (GEMINI_API_KEY), handling naming/case-sensitivity
+  differences across operating systems.
+Tech: Python, google-generativeai (Gemini API)
+
+7. Spendly — Expense Tracker
+A full-stack Android expense tracker app built in Flutter across multiple iterations.
+- First iteration was Firebase-backed; later iterations switched to SQLite/SharedPreferences for a
+  fully local, simpler app.
+- Debugged Gradle, Dart compilation errors, and Android SDK/AGP version mismatches on Windows.
+Tech: Flutter, Dart, SQLite, Firebase
+
+CERTIFICATES
+============
+- Oracle Cloud Infrastructure Certified AI Foundations Associate | Oracle | Sep 2026
+- AI Engineer Launchpad: Mastering LLMs and Agentic AI | Aug 2026
+- Python with Libraries | Skillera | Mar 2025
+- Programming Using C++ | Infosys SpringBoard | Jan 2025
+- Effective Time Management | Master Union Code | Oct 2024
+- Code Chef | Deanery of Science | Aug 2023
+
+CO-CURRICULAR ACTIVITIES
+=========================
+- Competed in Algo-N-Hunt | Google Student Ambassador Program | Nov 2025
+- Participated in a Hackathon among 200+ participants | Sep 2024

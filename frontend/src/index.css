@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Signal green as RGB triplets so Tailwind's opacity modifiers keep working.
+     Light mode uses a darker, less saturated green for readability on a pale
+     background; dark mode keeps the brighter, punchier value. */
+  --signal: 21 128 61; /* #15803D */
+  --signal-dim: 22 100 66; /* #146442 */
+}
+.dark {
+  --signal: 92 242 154; /* #5CF29A */
+  --signal-dim: 46 139 93; /* #2E8B5D */
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-ink text-paper;
+}
+
+::selection {
+  @apply bg-signal/30;
+}
+
+/* Anchor tags default to inherited color, not the browser's blue —
+   components opt into an accent color (text-signal, etc.) explicitly. */
+a {
+  color: inherit;
+}
+
+/* thin, quiet scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-ink-line dark:bg-ink-line rounded-full;
+  background-color: #d5d0bf;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #232a38;
+}
+
+.bg-grid {
+  background-image: theme("backgroundImage.grid-light");
+  background-size: theme("backgroundSize.grid");
+}
+.dark .bg-grid {
+  background-image: theme("backgroundImage.grid-dark");
+  background-size: theme("backgroundSize.grid");
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid #5cf29a;
+  outline-offset: 2px;
+}

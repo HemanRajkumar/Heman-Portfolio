@@ -1,0 +1,51 @@
+[
+  {
+    "id": "skill-gap-analyzer",
+    "title": "Skill Gap Analyzer",
+    "date": "Aug 2026",
+    "description": "An AI-powered application that analyzes a user's existing skills against their career goals and surfaces the specific gaps to close, with structured, actionable insights.",
+    "highlights": [
+      "FastAPI backend with endpoints for user input, skill-analysis requests, and structured results",
+      "Google Gemini integration for AI-assisted skill-gap insights and personalized recommendations",
+      "Clear separation between the interface layer and the analysis logic"
+    ],
+    "tech": ["Python", "FastAPI", "Google Gemini", "HTML", "CSS"],
+    "github": "https://github.com/HemanRajkumar/Skill_Gap_Analyzer.git",
+    "demo": "",
+    "gif": "/assets/skill-gap-analyzer.gif",
+    "metrics": "AI-generated, personalized skill-gap reports"
+  },
+  {
+    "id": "crop-advisory-system",
+    "title": "Intelligent Crop Advisory System",
+    "date": "Apr 2026",
+    "description": "A machine-learning-based agricultural advisory system combining crop recommendation, fertilizer recommendation, plant-disease detection, and yield prediction in one unified application.",
+    "highlights": [
+      "Random Forest models for crop and fertilizer recommendation, Random Forest for yield prediction",
+      "MobileNetV2 (TensorFlow/Keras) for plant-disease detection from leaf images",
+      "Interactive Streamlit interface with Plotly visualizations, deployed via cloudflared tunneling",
+      "Built as a group Applied Machine Learning course project with a login/user-history system and a full project report"
+    ],
+    "tech": ["Python", "Scikit-learn", "TensorFlow/Keras", "Streamlit", "Plotly"],
+    "github": "https://github.com/HemanRajkumar/crop-advisory-system.git",
+    "demo": "",
+    "gif": "/assets/crop-advisory-system.gif",
+    "metrics": "4 advisory modules in one app"
+  },
+  {
+    "id": "pokemon-pokedex",
+    "title": "Pokemon Pokedex",
+    "date": "Oct 2024",
+    "description": "A responsive, interactive Pokedex website for exploring detailed Pokemon information with simple navigation and an engaging browsing experience.",
+    "highlights": [
+      "JavaScript-powered interactive features for types, abilities, stats, and moves",
+      "Structured HTML content combined with dynamic client-side functionality",
+      "Deployed on GitHub Pages"
+    ],
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "github": "https://github.com/HemanRajkumar/Pokemon_Pokedex.git",
+    "demo": "",
+    "gif": "/assets/pokemon-pokedex.gif",
+    "metrics": "Deployed on GitHub Pages"
+  }
+]
