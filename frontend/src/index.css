@@ -1652,14 +1652,12 @@ html.light .assistant-send-button:hover:not(:disabled) {
 
   .hero h1 span {
     display: block;
-    width: 100%;
+    width: max-content;
     max-width: 100%;
-    font-size: clamp(36px, 11vw, 58px) !important;
-    line-height: .9;
-    letter-spacing: -.045em;
+    font-size: 1em !important;
+    line-height: .86;
+    letter-spacing: -.01em;
     white-space: nowrap;
-    overflow: visible;
-    box-sizing: border-box;
   }
 
   .hero-title {
@@ -1748,12 +1746,22 @@ html.light .assistant-send-button:hover:not(:disabled) {
   }
 
   .hero h1 {
+    width: 100%;
+    max-width: 100%;
     font-size: clamp(38px, 11vw, 54px) !important;
+    line-height: 1 !important;
+    letter-spacing: -.065em;
   }
 
   .hero h1 span {
-    font-size: clamp(34px, 10.5vw, 52px) !important;
-    letter-spacing: -.05em;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1em !important;
+    line-height: 1 !important;
+    letter-spacing: -.025em;
+    white-space: nowrap;
+    margin-top: 3px;
   }
 
   .hero-title {
