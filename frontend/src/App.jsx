@@ -294,11 +294,11 @@ function App() {
 
     const to = "hemanrajkumar359660070@gmail.com";
     const subject = encodeURIComponent(name);
-    const body = encodeURIComponent(message);
+    const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`);
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${subject}&body=${body}`;
 
     setContactStatus("Opening Gmail with your message ready to send…");
-    window.open(gmailUrl, "_blank", "noopener,noreferrer");
+    window.location.href = gmailUrl;
   };
 
   useEffect(() => {
