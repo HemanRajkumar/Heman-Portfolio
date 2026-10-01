@@ -1794,8 +1794,8 @@ html.light .assistant-send-button:hover:not(:disabled) {
   color: #111 !important;
 }
 
+/* HERO NAME */
 
-/* FINAL HERO NAME FIX */
 .hero-name {
   display: flex !important;
   flex-direction: column !important;
@@ -1869,9 +1869,8 @@ html.light .assistant-send-button:hover:not(:disabled) {
   }
 
   .hero-name .hero-last-name {
-    -webkit-text-stroke: 1.5px #eeeeeb !important;
-    text-stroke: 1.5px #eeeeeb !important;
-    letter-spacing: -.02em !important;
+    -webkit-text-stroke: 1.5px var(--text) !important;
+    text-stroke: 1.5px var(--text) !important;
   }
 }
 
