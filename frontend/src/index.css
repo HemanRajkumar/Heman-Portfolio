@@ -1795,66 +1795,65 @@ html.light .assistant-send-button:hover:not(:disabled) {
 }
 
 
-/* FINAL MOBILE HERO NAME OVERLAP FIX */
+/* FINAL HERO NAME FIX — HEMAN AND RAJKUMAR SEPARATE LINES */
 
 .hero h1 {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: flex-start !important;
-  justify-content: flex-start !important;
-  gap: 6px !important;
+  display: block !important;
   width: 100% !important;
   max-width: 100% !important;
   margin: 0 !important;
-  line-height: 1 !important;
+  padding: 0 !important;
+  line-height: 1.02 !important;
   white-space: normal !important;
+  overflow: visible !important;
 }
 
 .hero h1 span {
   display: block !important;
-  position: static !important;
   width: auto !important;
   max-width: 100% !important;
-  margin: 0 !important;
+  margin: 8px 0 0 !important;
   padding: 0 !important;
-  line-height: 1 !important;
+  line-height: 1.02 !important;
   white-space: nowrap !important;
+  position: static !important;
   transform: none !important;
 }
 
 @media (max-width: 1200px) {
   .hero h1 {
-    gap: 7px !important;
-    line-height: 1 !important;
+    line-height: 1.02 !important;
   }
 
   .hero h1 span {
-    line-height: 1 !important;
-    margin: 0 !important;
+    margin-top: 8px !important;
+    line-height: 1.02 !important;
   }
 }
 
 @media (max-width: 760px) {
   .hero h1 {
-    gap: 7px !important;
     font-size: clamp(40px, 11vw, 68px) !important;
-    line-height: 1 !important;
+    line-height: 1.04 !important;
+    letter-spacing: -.065em !important;
   }
 
   .hero h1 span {
+    margin-top: 7px !important;
     font-size: 1em !important;
-    line-height: 1 !important;
+    line-height: 1.04 !important;
     letter-spacing: -.025em !important;
   }
 }
 
 @media (max-width: 420px) {
   .hero h1 {
-    gap: 6px !important;
     font-size: clamp(38px, 11vw, 54px) !important;
+    line-height: 1.05 !important;
   }
 
   .hero h1 span {
-    line-height: 1 !important;
+    margin-top: 6px !important;
+    line-height: 1.05 !important;
   }
 }
