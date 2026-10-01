@@ -9,11 +9,18 @@
       "Google Gemini integration for AI-assisted skill-gap insights and personalized recommendations",
       "Clear separation between the interface layer and the analysis logic"
     ],
-    "tech": ["Python", "FastAPI", "Google Gemini", "HTML", "CSS"],
+    "tech": [
+      "Python",
+      "FastAPI",
+      "Google Gemini",
+      "HTML",
+      "CSS"
+    ],
     "github": "https://github.com/HemanRajkumar/Skill_Gap_Analyzer.git",
     "demo": "",
     "gif": "/assets/skill-gap-analyzer.gif",
-    "metrics": "AI-generated, personalized skill-gap reports"
+    "metrics": "AI-generated, personalized skill-gap reports",
+    "cover": "/assets/skill-gap-analyzer.png"
   },
   {
     "id": "crop-advisory-system",
@@ -26,11 +33,18 @@
       "Interactive Streamlit interface with Plotly visualizations, deployed via cloudflared tunneling",
       "Built as a group Applied Machine Learning course project with a login/user-history system and a full project report"
     ],
-    "tech": ["Python", "Scikit-learn", "TensorFlow/Keras", "Streamlit", "Plotly"],
+    "tech": [
+      "Python",
+      "Scikit-learn",
+      "TensorFlow/Keras",
+      "Streamlit",
+      "Plotly"
+    ],
     "github": "https://github.com/HemanRajkumar/crop-advisory-system.git",
     "demo": "",
     "gif": "/assets/crop-advisory-system.gif",
-    "metrics": "4 advisory modules in one app"
+    "metrics": "4 advisory modules in one app",
+    "cover": "/assets/crop-advisory-cover.png"
   },
   {
     "id": "pokemon-pokedex",
@@ -42,10 +56,15 @@
       "Structured HTML content combined with dynamic client-side functionality",
       "Deployed on GitHub Pages"
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "github": "https://github.com/HemanRajkumar/Pokemon_Pokedex.git",
     "demo": "",
     "gif": "/assets/pokemon-pokedex.gif",
-    "metrics": "Deployed on GitHub Pages"
+    "metrics": "Deployed on GitHub Pages",
+    "cover": "/assets/pokemon-pokedex.png"
   }
 ]

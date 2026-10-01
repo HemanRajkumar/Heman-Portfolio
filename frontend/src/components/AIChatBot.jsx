@@ -206,10 +206,11 @@ export default function AIChatBot() {
           <button
             type="submit"
             disabled={loading || !input.trim()}
-            aria-label="Send"
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-ink text-paper transition-opacity disabled:opacity-40 dark:bg-signal dark:text-ink"
+            aria-label="Send message"
+            title="Send message"
+            className="assistant-send-button grid h-12 w-12 shrink-0 place-items-center rounded-full transition-all disabled:cursor-not-allowed disabled:opacity-45"
           >
-            <Send size={15} />
+            <Send size={18} strokeWidth={2.2} />
           </button>
         </form>
       </div>
