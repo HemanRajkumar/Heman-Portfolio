@@ -1746,22 +1746,7 @@ html.light .assistant-send-button:hover:not(:disabled) {
   }
 
   .hero h1 {
-    width: 100%;
-    max-width: 100%;
     font-size: clamp(38px, 11vw, 54px) !important;
-    line-height: 1 !important;
-    letter-spacing: -.065em;
-  }
-
-  .hero h1 span {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    font-size: 1em !important;
-    line-height: 1 !important;
-    letter-spacing: -.025em;
-    white-space: nowrap;
-    margin-top: 3px;
   }
 
   .hero-title {
@@ -1807,4 +1792,63 @@ html.light .assistant-send-button:hover:not(:disabled) {
 
 .light-theme .mobile-menu:hover {
   color: #111 !important;
+}
+
+
+/* =========================================================
+   FINAL HERO NAME RESPONSIVE FIX
+   Prevent HEMAN / RAJKUMAR overlap on phones, tablet
+   widths, browser "desktop site" mode, and small windows.
+   ========================================================= */
+
+.hero h1 {
+  overflow: visible;
+}
+
+@media (max-width: 1050px) {
+  .hero h1 {
+    line-height: .94 !important;
+  }
+
+  .hero h1 span {
+    line-height: .94 !important;
+    margin-top: .08em !important;
+    display: block !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(40px, 11vw, 68px) !important;
+    line-height: .96 !important;
+    letter-spacing: -.065em !important;
+    white-space: normal !important;
+  }
+
+  .hero h1 span {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin-top: .08em !important;
+    font-size: 1em !important;
+    line-height: .96 !important;
+    letter-spacing: -.025em !important;
+    white-space: nowrap !important;
+    -webkit-text-stroke: 1.5px #eeeeeb;
+    text-stroke: 1.5px #eeeeeb;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 54px) !important;
+    line-height: .98 !important;
+  }
+
+  .hero h1 span {
+    line-height: .98 !important;
+    margin-top: .1em !important;
+  }
 }
