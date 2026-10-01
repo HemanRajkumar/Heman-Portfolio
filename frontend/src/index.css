@@ -1652,12 +1652,14 @@ html.light .assistant-send-button:hover:not(:disabled) {
 
   .hero h1 span {
     display: block;
-    width: max-content;
+    width: 100%;
     max-width: 100%;
-    font-size: 1em !important;
-    line-height: .86;
-    letter-spacing: -.01em;
+    font-size: clamp(36px, 11vw, 58px) !important;
+    line-height: .9;
+    letter-spacing: -.045em;
     white-space: nowrap;
+    overflow: visible;
+    box-sizing: border-box;
   }
 
   .hero-title {
@@ -1747,6 +1749,11 @@ html.light .assistant-send-button:hover:not(:disabled) {
 
   .hero h1 {
     font-size: clamp(38px, 11vw, 54px) !important;
+  }
+
+  .hero h1 span {
+    font-size: clamp(34px, 10.5vw, 52px) !important;
+    letter-spacing: -.05em;
   }
 
   .hero-title {
