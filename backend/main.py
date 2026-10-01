@@ -36,9 +36,9 @@ if not CONTEXT_FILE.exists():
         "keep your CV/project details there."
     )
 
-PROJECT_CONTEXT = CONTEXT_FILE.read_text(encoding="utf-8")
-
-SYSTEM_PROMPT = f"""You are the personal AI assistant embedded in Heman's portfolio website.
+def _build_system_prompt():
+    project_context = CONTEXT_FILE.read_text(encoding="utf-8")
+    return f"""You are the personal AI assistant embedded in Heman's portfolio website.
 Visitors will ask you about his projects, skills, background, and experience.
 
 Always remain professional, concise, and friendly. Prefer short, direct answers (2-5 sentences)
@@ -47,10 +47,18 @@ technology by name so the answer feels concrete rather than generic.
 
 Here is the complete profile and project context to answer from:
 ---
-{PROJECT_CONTEXT}
+{project_context}
 ---
 
 Instructions:
+- project_details.txt is the single source of truth for Heman's profile, contact details,
+  projects, skills, background, and experience.
+- Read and use the current contents of project_details.txt for every request.
+- If chat history conflicts with project_details.txt, always use the current value from
+  project_details.txt and ignore the conflicting history.
+- Use exact values from project_details.txt for personal and contact details.
+- Never use old values from previous conversations, previous versions of the file, frontend
+  files, hardcoded values, or your own assumptions.
 - Only answer using the context above. Do not invent projects, dates, employers, or metrics that
   are not in the context.
 - If a question can't be answered from the context, say so politely and suggest the visitor reach
@@ -116,7 +124,7 @@ async def chat_with_portfolio_ai(request: ChatRequest):
             model=GEMINI_MODEL,
             contents=_build_contents(request),
             config=types.GenerateContentConfig(
-                system_instruction=SYSTEM_PROMPT,
+                system_instruction=_build_system_prompt(),
                 temperature=0.3,
                 max_output_tokens=512,
             ),
@@ -137,7 +145,7 @@ async def chat_with_portfolio_ai_stream(request: ChatRequest):
                 model=GEMINI_MODEL,
                 contents=_build_contents(request),
                 config=types.GenerateContentConfig(
-                    system_instruction=SYSTEM_PROMPT,
+                    system_instruction=_build_system_prompt(),
                     temperature=0.3,
                     max_output_tokens=512,
                 ),
