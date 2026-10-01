@@ -294,11 +294,11 @@ function App() {
 
     const to = "hemanrajkumar359660070@gmail.com";
     const subject = encodeURIComponent(name);
-    const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`);
+    const body = encodeURIComponent(message);
     const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${subject}&body=${body}`;
 
     setContactStatus("Opening Gmail with your message ready to send…");
-    window.location.href = gmailUrl;
+    window.open(gmailUrl, "_blank", "noopener,noreferrer");
   };
 
   useEffect(() => {
@@ -427,9 +427,9 @@ function App() {
               transition={{ duration: 0.8 }}
             >
               <p className="eyebrow">Computer Science Student &amp; AI/ML Enthusiast</p>
-              <h1>
-                HEMAN
-                <span>RAJKUMAR</span>
+              <h1 className="hero-name">
+                <span className="hero-first-name">HEMAN</span>
+                <span className="hero-last-name">RAJKUMAR</span>
               </h1>
               <p className="hero-title">
                 B.Tech Computer Science &amp; Engineering — AI/ML Enthusiast
