@@ -1825,8 +1825,18 @@ html.light .assistant-send-button:hover:not(:disabled) {
 
 .hero-name .hero-last-name {
   color: transparent !important;
-  -webkit-text-stroke: 2px #eeeeeb !important;
-  text-stroke: 2px #eeeeeb !important;
+  -webkit-text-stroke: 2px var(--text) !important;
+  text-stroke: 2px var(--text) !important;
+}
+
+.light-theme .hero-name .hero-first-name {
+  color: #111 !important;
+}
+
+.light-theme .hero-name .hero-last-name {
+  color: transparent !important;
+  -webkit-text-stroke: 2px #111 !important;
+  text-stroke: 2px #111 !important;
 }
 
 @media (max-width: 1050px) {
