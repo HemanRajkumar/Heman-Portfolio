@@ -1763,11 +1763,6 @@ html.light .assistant-send-button:hover:not(:disabled) {
 }
 
 
-/* =========================================================
-   SAMSUNG A55 / MOBILE PROJECT COVER FIX
-   Keep the complete cover artwork visible instead of
-   cropping the left/right content on narrow screens.
-   ========================================================= */
 
 @media (max-width: 760px) {
   .project-media {
@@ -1795,7 +1790,6 @@ html.light .assistant-send-button:hover:not(:disabled) {
 }
 
 
-/* FINAL HERO NAME FIX — HEMAN AND RAJKUMAR SEPARATE LINES */
 
 .hero h1 {
   display: block !important;
