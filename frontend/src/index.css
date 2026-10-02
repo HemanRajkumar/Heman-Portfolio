@@ -2225,14 +2225,103 @@ html.light .assistant-send-button:hover:not(:disabled) {
 }
 
 
-/* PROJECT COVER SIZE FIX — SMALL DESKTOP / MAC WINDOW */
+/* FINAL HAMBURGER MENU FIX */
 
-@media (min-width: 761px) and (max-width: 1400px) {
+@media (max-width: 1100px) {
+  .navbar {
+    position: fixed !important;
+    z-index: 1000 !important;
+  }
+
+  .mobile-menu {
+    position: relative !important;
+    z-index: 1003 !important;
+    display: grid !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+  }
+
+  .nav-actions {
+    position: relative !important;
+    z-index: 1003 !important;
+  }
+
+  .nav-links {
+    position: absolute !important;
+    top: 72px !important;
+    left: 14px !important;
+    right: 14px !important;
+    z-index: 1002 !important;
+    display: none !important;
+    pointer-events: none !important;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+    pointer-events: auto !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    height: 68px !important;
+  }
+
+  .nav-links {
+    top: 68px !important;
+  }
+
+  .nav-links.open {
+    display: flex !important;
+    pointer-events: auto !important;
+  }
+}
+
+
+/* FINAL PROJECT COVER RESPONSIVE FIX — ALL DESKTOP/TABLET/MOBILE WIDTHS */
+
+.project-media {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  overflow: hidden !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+  flex-shrink: 0 !important;
+}
+
+.project-media img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  filter: none !important;
+  opacity: 1 !important;
+  mix-blend-mode: normal !important;
+}
+
+@media (max-width: 1100px) {
   .project-media {
-    width: 100% !important;
-    height: auto !important;
     aspect-ratio: 16 / 9 !important;
-    overflow: hidden !important;
+    height: auto !important;
+  }
+
+  .project-media img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .project-media {
+    aspect-ratio: 16 / 9 !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
   }
 
   .project-media img {
@@ -2240,5 +2329,11 @@ html.light .assistant-send-button:hover:not(:disabled) {
     height: 100% !important;
     object-fit: cover !important;
     object-position: center center !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .project-media {
+    aspect-ratio: 16 / 9 !important;
   }
 }
