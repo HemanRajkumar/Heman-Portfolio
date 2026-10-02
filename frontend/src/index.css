@@ -2223,3 +2223,22 @@ html.light .assistant-send-button:hover:not(:disabled) {
     right: 1% !important;
   }
 }
+
+
+/* PROJECT COVER SIZE FIX — SMALL DESKTOP / MAC WINDOW */
+
+@media (min-width: 761px) and (max-width: 1400px) {
+  .project-media {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    overflow: hidden !important;
+  }
+
+  .project-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
