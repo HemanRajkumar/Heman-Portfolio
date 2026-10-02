@@ -1885,3 +1885,341 @@ html.light .assistant-send-button:hover:not(:disabled) {
     line-height: 1 !important;
   }
 }
+
+
+/* FINAL RESPONSIVE NAV + PROFILE CARD FIX */
+
+@media (max-width: 1100px) {
+  .navbar {
+    height: 72px;
+    padding-left: clamp(18px, 4vw, 44px);
+    padding-right: clamp(18px, 4vw, 44px);
+    gap: 12px;
+  }
+
+  .mobile-menu {
+    display: grid !important;
+    order: 1 !important;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    flex: 0 0 36px;
+    color: var(--text);
+    cursor: pointer;
+  }
+
+  .brand {
+    order: 2 !important;
+    min-width: 0;
+    flex: 0 1 auto;
+  }
+
+  .brand b {
+    white-space: nowrap;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-actions {
+    order: 3 !important;
+    margin-left: auto;
+    flex: 0 0 auto;
+  }
+
+  .download-btn {
+    display: none !important;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    height: 570px;
+    margin-top: 25px;
+  }
+
+  .hero-visual .planet {
+    width: min(430px, 70vw);
+    height: min(430px, 70vw);
+    right: 50%;
+    top: 8%;
+    transform: translateX(50%);
+  }
+
+  .hero-visual .orbit-one {
+    width: min(610px, 92vw);
+    right: 50%;
+    transform: translateX(50%) rotate(-22deg);
+  }
+
+  .hero-visual .orbit-two {
+    width: min(530px, 82vw);
+    right: 50%;
+    transform: translateX(50%) rotate(35deg);
+  }
+
+  .profile-card {
+    width: min(330px, 76vw);
+    right: 50% !important;
+    top: 2% !important;
+    transform: translateX(50%) !important;
+  }
+
+  .stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    min-width: 0;
+  }
+
+  .stats div {
+    min-width: 0;
+  }
+
+  .stats strong,
+  .stats span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .stats strong {
+    font-size: clamp(19px, 2.5vw, 23px);
+  }
+
+  .stats span {
+    font-size: 9px;
+    line-height: 1.35;
+    letter-spacing: .06em;
+    white-space: normal;
+  }
+
+  .availability {
+    min-width: 0;
+    align-items: flex-start;
+    line-height: 1.45;
+  }
+
+  .availability i {
+    flex: 0 0 7px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    height: 68px;
+    padding: 0 18px;
+    gap: 10px;
+  }
+
+  .mobile-menu {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+  }
+
+  .brand {
+    gap: 8px;
+    min-width: 0;
+    max-width: calc(100% - 90px);
+  }
+
+  .brand b {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    letter-spacing: .10em;
+  }
+
+  .nav-actions {
+    margin-left: auto;
+  }
+
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+  }
+
+  .hero-visual {
+    height: 500px;
+  }
+
+  .hero-visual .planet {
+    width: min(360px, 86vw);
+    height: min(360px, 86vw);
+    top: 10%;
+  }
+
+  .profile-card {
+    width: min(290px, 78vw);
+    right: 50% !important;
+    top: 4% !important;
+    transform: translateX(50%) !important;
+  }
+
+  .stats span {
+    font-size: 8.5px;
+    letter-spacing: .045em;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .brand b {
+    font-size: 9px;
+    letter-spacing: .08em;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    flex-basis: 36px;
+  }
+
+  .profile-card {
+    width: min(260px, 78vw);
+  }
+
+  .stats {
+    gap: 5px;
+  }
+
+  .stats strong {
+    font-size: 18px;
+  }
+
+  .stats span {
+    font-size: 8px;
+    letter-spacing: .02em;
+  }
+}
+
+
+/* FINAL PROFILE CARD TEXT CONTAINMENT FIX */
+
+.profile-card {
+  width: min(330px, calc(100% - 20px)) !important;
+  max-width: calc(100% - 20px) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+.profile-card .stats {
+  width: 100% !important;
+  min-width: 0 !important;
+  grid-template-columns: minmax(0, .85fr) minmax(0, .85fr) minmax(0, 1.3fr) !important;
+  gap: 6px !important;
+}
+
+.profile-card .stats div {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+
+.profile-card .stats strong {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  font-size: clamp(18px, 1.7vw, 23px) !important;
+  white-space: nowrap !important;
+}
+
+.profile-card .stats span {
+  display: block !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  font-size: clamp(7px, .65vw, 10px) !important;
+  line-height: 1.25 !important;
+  letter-spacing: .045em !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+}
+
+.profile-card .availability {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
+
+@media (max-width: 1100px) {
+  .profile-card {
+    width: min(330px, calc(100% - 24px)) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .profile-card .stats span {
+    font-size: 9px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .profile-card {
+    width: min(290px, calc(100% - 28px)) !important;
+    max-width: calc(100% - 28px) !important;
+  }
+
+  .profile-card .stats {
+    grid-template-columns: minmax(0, .85fr) minmax(0, .85fr) minmax(0, 1.3fr) !important;
+  }
+
+  .profile-card .stats span {
+    font-size: 8px !important;
+    letter-spacing: .025em !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-card {
+    width: min(260px, calc(100% - 24px)) !important;
+    max-width: calc(100% - 24px) !important;
+  }
+
+  .profile-card .stats {
+    gap: 4px !important;
+  }
+
+  .profile-card .stats strong {
+    font-size: 18px !important;
+  }
+
+  .profile-card .stats span {
+    font-size: 7.5px !important;
+  }
+}
+
+
+/* FINAL PROFILE CARD POSITION FIX FOR MAC / MEDIUM DESKTOP */
+
+@media (min-width: 1101px) and (max-width: 1600px) {
+  .hero-visual .profile-card {
+    right: -5% !important;
+    top: 2% !important;
+  }
+}
+
+@media (min-width: 1601px) {
+  .hero-visual .profile-card {
+    right: 1% !important;
+  }
+}
